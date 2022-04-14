@@ -345,9 +345,10 @@ margin-right: 30px;
 
 .section-clients-logo:hover {
   border-color: var(--accent-color);
+  color: var(--accent-color);
 }
-.section-clients-logo:hover .client-icon-logo { 
-  fill: var(--accent-color);
+.section-clients-logo:hover .client-icon-logo {
+  fill: currentColor;
 }
 .client-item:not(:last-child) {
   margin-right: 30px;
@@ -355,6 +356,7 @@ margin-right: 30px;
 .client-icon-logo {
   width: 106px;
   height: 60px;
+  fill: #AFB1B8;
 }
 
 /* Footer */
@@ -396,10 +398,14 @@ margin-right: 30px;
 .contacts:hover {
   color: var(--accent-color);
 }
-.container-footer .footer-link {
+.container-footer {
   display: flex;
-  
 }
+.footer-link {
+  padding-left: 70px;
+  padding-top: 12px;
+}
+
 .footer-title {
   color: var(--complementary-color);
   font-weight: bold;
